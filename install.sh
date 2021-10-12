@@ -10,7 +10,7 @@ chown -R splunk:splunk /opt/backup
 
 cp backup_splunk.sh /opt/backup/bin
 chmod 755 /opt/backup/bin/backup_splunk.sh
-q
+
 cp backup_splunk.{service,timer} /etc/systemd/system/
 
 systemctl enable backup_splunk.timer
