@@ -1,15 +1,4 @@
 [Unit]
-Description=Run backup_splunk.service
-
-[Timer]
-OnCalendar=daily
-Persistent=true
-Unit=backup_splunk.service
-
-[Install]
-WantedBy=timers.target
-kaljan@sh0:~/script$ cat backup_splunk.service 
-[Unit]
 Description=Backup important Splunk files and folders
 
 [Service]
