@@ -1,0 +1,10 @@
+[Unit]
+Description=Run backup_splunk.service
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+Unit=backup_splunk.service
+
+[Install]
+WantedBy=timers.target
